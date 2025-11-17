@@ -13,7 +13,7 @@ env/
 .venv/
 
 # Azure Functions
-local.settings.json
+Task-Manager-Func-App/local.settings.json
 .azurefunctions/
 .python_packages/
 func_env/
