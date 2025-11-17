@@ -24,7 +24,7 @@ def send_email_notification(task):
     sg = sendgrid.SendGridAPIClient(api_key=SENDGRID_API_KEY)
     message = Mail(
         from_email='noreply@taskmanager.com',
-        to_emails='cody.tran@edu.sait.ca',  # Replace with user's email
+        to_emails='cody.tran@edu.sait.ca',
         subject=f"Task Due Soon: {task['title']}",
         plain_text_content=f"Reminder: Task '{task['title']}' is due on {task['due_date']}"
     )
